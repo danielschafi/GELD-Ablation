@@ -1,0 +1,315 @@
+Task 5: STAGE_1=knn-BeamSearch  STAGE_2=BeamSearch-RC
+[2026-05-21 02:23:20] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:23:20] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:23:20] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:23:20] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:23:20] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True}
+[2026-05-21 02:23:20] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:23:20] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+/home/schafhdaniel@edu.local/ablation-study-GELD/.venv/lib/python3.11/site-packages/torch/__init__.py:696: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:451.)
+  _C._set_default_tensor_type(t)
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:23:26] TSPTester.py(702) : greedy, name:TSP100, gap:67.749554 %,  Elapsed[0.07m], stu_l:13.200782 , opt_l:7.869339
+[2026-05-21 02:23:26] TSPTester.py(86) : episode 200/200, Elapsed[0.07m], Remain[0.00m], Score_teacher:7.8693,Score_studetnt: 13.2008,
+[2026-05-21 02:23:26] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:23:26] TSPTester.py(101) :  Teacher SCORE: 7.8693 
+[2026-05-21 02:23:26] TSPTester.py(102) :  Student SCORE: 13.2008 
+[2026-05-21 02:23:26] TSPTester.py(103) :  Gap: 67.7496%
+[2026-05-21 02:23:26] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:23:26] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:23:26] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:23:26] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:23:26] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:23:26] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:23:26] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:23:33] TSPTester.py(702) : greedy, name:TSP500, gap:95.259660 %,  Elapsed[0.09m], stu_l:32.267426 , opt_l:16.525393
+[2026-05-21 02:23:33] TSPTester.py(86) : episode 100/200, Elapsed[0.09m], Remain[0.09m], Score_teacher:16.5254,Score_studetnt: 32.2674,
+Get first complete solution!
+[2026-05-21 02:23:37] TSPTester.py(702) : greedy, name:TSP500, gap:139.657438 %,  Elapsed[0.16m], stu_l:39.770653 , opt_l:16.594791
+[2026-05-21 02:23:37] TSPTester.py(86) : episode 200/200, Elapsed[0.16m], Remain[0.00m], Score_teacher:16.5948,Score_studetnt: 39.7707,
+[2026-05-21 02:23:37] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:23:37] TSPTester.py(101) :  Teacher SCORE: 16.5601 
+[2026-05-21 02:23:37] TSPTester.py(102) :  Student SCORE: 36.0190 
+[2026-05-21 02:23:37] TSPTester.py(103) :  Gap: 117.5051%
+[2026-05-21 02:23:37] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:23:37] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:23:37] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:23:37] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:23:37] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:23:37] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:23:37] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:23:49] TSPTester.py(702) : greedy, name:TSP1000, gap:106.535959 %,  Elapsed[0.17m], stu_l:47.960728 , opt_l:23.221491
+[2026-05-21 02:23:49] TSPTester.py(86) : episode 200/200, Elapsed[0.17m], Remain[0.00m], Score_teacher:23.2215,Score_studetnt: 47.9607,
+[2026-05-21 02:23:49] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:23:49] TSPTester.py(101) :  Teacher SCORE: 23.2215 
+[2026-05-21 02:23:49] TSPTester.py(102) :  Student SCORE: 47.9607 
+[2026-05-21 02:23:49] TSPTester.py(103) :  Gap: 106.5360%
+[2026-05-21 02:23:49] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:23:49] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:23:49] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:23:49] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:23:49] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:23:49] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:23:49] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:24:00] TSPTester.py(702) : greedy, name:TSP5000, gap:148.372030 %,  Elapsed[0.16m], stu_l:126.627457 , opt_l:50.982979
+[2026-05-21 02:24:00] TSPTester.py(86) : episode  20/ 20, Elapsed[0.16m], Remain[0.00m], Score_teacher:50.9830,Score_studetnt: 126.6275,
+[2026-05-21 02:24:00] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:24:00] TSPTester.py(101) :  Teacher SCORE: 50.9830 
+[2026-05-21 02:24:00] TSPTester.py(102) :  Student SCORE: 126.6275 
+[2026-05-21 02:24:00] TSPTester.py(103) :  Gap: 148.3720%
+[2026-05-21 02:24:00] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:24:00] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:24:00] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:24:00] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:24:00] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:24:00] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:24:00] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:24:17] TSPTester.py(702) : greedy, name:TSP10000, gap:190.204549 %,  Elapsed[0.25m], stu_l:212.266022 , opt_l:73.143593
+[2026-05-21 02:24:17] TSPTester.py(86) : episode  20/ 20, Elapsed[0.25m], Remain[0.00m], Score_teacher:73.1436,Score_studetnt: 212.2660,
+[2026-05-21 02:24:17] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:24:17] TSPTester.py(101) :  Teacher SCORE: 73.1436 
+[2026-05-21 02:24:17] TSPTester.py(102) :  Student SCORE: 212.2660 
+[2026-05-21 02:24:17] TSPTester.py(103) :  Gap: 190.2045%
+[2026-05-21 02:24:17] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:24:17] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:24:17] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:24:17] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:24:17] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:24:17] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:24:17] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:24:23] TSPTester.py(702) : greedy, name:TSP100, gap:58.679527 %,  Elapsed[0.07m], stu_l:8.549026 , opt_l:5.387605
+[2026-05-21 02:24:23] TSPTester.py(86) : episode 200/200, Elapsed[0.07m], Remain[0.00m], Score_teacher:5.3876,Score_studetnt: 8.5490,
+[2026-05-21 02:24:23] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:24:23] TSPTester.py(101) :  Teacher SCORE: 5.3876 
+[2026-05-21 02:24:23] TSPTester.py(102) :  Student SCORE: 8.5490 
+[2026-05-21 02:24:23] TSPTester.py(103) :  Gap: 58.6795%
+[2026-05-21 02:24:23] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:24:23] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:24:23] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:24:23] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:24:23] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:24:23] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:24:23] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:24:30] TSPTester.py(702) : greedy, name:TSP500, gap:91.308123 %,  Elapsed[0.08m], stu_l:19.564857 , opt_l:10.226883
+[2026-05-21 02:24:30] TSPTester.py(86) : episode 100/200, Elapsed[0.08m], Remain[0.08m], Score_teacher:10.2269,Score_studetnt: 19.5649,
+Get first complete solution!
+[2026-05-21 02:24:34] TSPTester.py(702) : greedy, name:TSP500, gap:137.712634 %,  Elapsed[0.16m], stu_l:24.870852 , opt_l:10.462570
+[2026-05-21 02:24:34] TSPTester.py(86) : episode 200/200, Elapsed[0.16m], Remain[0.00m], Score_teacher:10.4626,Score_studetnt: 24.8709,
+[2026-05-21 02:24:34] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:24:34] TSPTester.py(101) :  Teacher SCORE: 10.3447 
+[2026-05-21 02:24:34] TSPTester.py(102) :  Student SCORE: 22.2179 
+[2026-05-21 02:24:34] TSPTester.py(103) :  Gap: 114.7747%
+[2026-05-21 02:24:34] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:24:34] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:24:34] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:24:34] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:24:34] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:24:34] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:24:34] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:24:46] TSPTester.py(702) : greedy, name:TSP1000, gap:105.127156 %,  Elapsed[0.16m], stu_l:28.919252 , opt_l:14.098207
+[2026-05-21 02:24:46] TSPTester.py(86) : episode 200/200, Elapsed[0.16m], Remain[0.00m], Score_teacher:14.0982,Score_studetnt: 28.9193,
+[2026-05-21 02:24:46] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:24:46] TSPTester.py(101) :  Teacher SCORE: 14.0982 
+[2026-05-21 02:24:46] TSPTester.py(102) :  Student SCORE: 28.9193 
+[2026-05-21 02:24:46] TSPTester.py(103) :  Gap: 105.1272%
+[2026-05-21 02:24:46] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:24:46] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:24:46] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:24:46] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:24:46] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:24:46] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:24:46] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:24:58] TSPTester.py(702) : greedy, name:TSP5000, gap:151.194310 %,  Elapsed[0.16m], stu_l:72.434021 , opt_l:28.835852
+[2026-05-21 02:24:58] TSPTester.py(86) : episode  20/ 20, Elapsed[0.16m], Remain[0.00m], Score_teacher:28.8359,Score_studetnt: 72.4340,
+[2026-05-21 02:24:58] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:24:58] TSPTester.py(101) :  Teacher SCORE: 28.8359 
+[2026-05-21 02:24:58] TSPTester.py(102) :  Student SCORE: 72.4340 
+[2026-05-21 02:24:58] TSPTester.py(103) :  Gap: 151.1943%
+[2026-05-21 02:24:58] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:24:58] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:24:58] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:24:58] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:24:58] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:24:58] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:24:58] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:25:15] TSPTester.py(702) : greedy, name:TSP10000, gap:212.036371 %,  Elapsed[0.25m], stu_l:125.634697 , opt_l:40.262836
+[2026-05-21 02:25:15] TSPTester.py(86) : episode  20/ 20, Elapsed[0.25m], Remain[0.00m], Score_teacher:40.2628,Score_studetnt: 125.6347,
+[2026-05-21 02:25:15] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:25:15] TSPTester.py(101) :  Teacher SCORE: 40.2628 
+[2026-05-21 02:25:15] TSPTester.py(102) :  Student SCORE: 125.6347 
+[2026-05-21 02:25:15] TSPTester.py(103) :  Gap: 212.0364%
+[2026-05-21 02:25:15] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:25:15] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:25:15] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:25:15] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:25:15] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:25:15] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:25:15] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:25:22] TSPTester.py(702) : greedy, name:TSP100, gap:67.869055 %,  Elapsed[0.07m], stu_l:10.978186 , opt_l:6.539732
+[2026-05-21 02:25:22] TSPTester.py(86) : episode 200/200, Elapsed[0.07m], Remain[0.00m], Score_teacher:6.5397,Score_studetnt: 10.9782,
+[2026-05-21 02:25:22] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:25:22] TSPTester.py(101) :  Teacher SCORE: 6.5397 
+[2026-05-21 02:25:22] TSPTester.py(102) :  Student SCORE: 10.9782 
+[2026-05-21 02:25:22] TSPTester.py(103) :  Gap: 67.8691%
+[2026-05-21 02:25:22] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:25:22] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:25:22] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:25:22] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:25:22] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:25:22] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:25:22] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:25:29] TSPTester.py(702) : greedy, name:TSP500, gap:94.415188 %,  Elapsed[0.08m], stu_l:23.301533 , opt_l:11.985449
+[2026-05-21 02:25:29] TSPTester.py(86) : episode 100/200, Elapsed[0.08m], Remain[0.08m], Score_teacher:11.9854,Score_studetnt: 23.3015,
+Get first complete solution!
+[2026-05-21 02:25:33] TSPTester.py(702) : greedy, name:TSP500, gap:139.232576 %,  Elapsed[0.16m], stu_l:28.791269 , opt_l:12.034844
+[2026-05-21 02:25:33] TSPTester.py(86) : episode 200/200, Elapsed[0.16m], Remain[0.00m], Score_teacher:12.0348,Score_studetnt: 28.7913,
+[2026-05-21 02:25:33] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:25:33] TSPTester.py(101) :  Teacher SCORE: 12.0101 
+[2026-05-21 02:25:33] TSPTester.py(102) :  Student SCORE: 26.0464 
+[2026-05-21 02:25:33] TSPTester.py(103) :  Gap: 116.8700%
+[2026-05-21 02:25:33] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:25:33] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:25:33] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:25:33] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:25:33] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:25:33] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:25:33] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:25:46] TSPTester.py(702) : greedy, name:TSP1000, gap:104.174745 %,  Elapsed[0.16m], stu_l:32.778728 , opt_l:16.054253
+[2026-05-21 02:25:46] TSPTester.py(86) : episode 200/200, Elapsed[0.16m], Remain[0.00m], Score_teacher:16.0543,Score_studetnt: 32.7787,
+[2026-05-21 02:25:46] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:25:46] TSPTester.py(101) :  Teacher SCORE: 16.0543 
+[2026-05-21 02:25:46] TSPTester.py(102) :  Student SCORE: 32.7787 
+[2026-05-21 02:25:46] TSPTester.py(103) :  Gap: 104.1747%
+[2026-05-21 02:25:46] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:25:46] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:25:46] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:25:46] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:25:46] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:25:46] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:25:46] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:25:58] TSPTester.py(702) : greedy, name:TSP5000, gap:154.216397 %,  Elapsed[0.16m], stu_l:81.296295 , opt_l:31.979170
+[2026-05-21 02:25:58] TSPTester.py(86) : episode  20/ 20, Elapsed[0.16m], Remain[0.00m], Score_teacher:31.9792,Score_studetnt: 81.2963,
+[2026-05-21 02:25:58] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:25:58] TSPTester.py(101) :  Teacher SCORE: 31.9792 
+[2026-05-21 02:25:58] TSPTester.py(102) :  Student SCORE: 81.2963 
+[2026-05-21 02:25:58] TSPTester.py(103) :  Gap: 154.2164%
+[2026-05-21 02:25:58] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:25:58] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:25:58] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:25:58] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:25:58] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:25:58] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:25:58] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:26:16] TSPTester.py(702) : greedy, name:TSP10000, gap:194.548821 %,  Elapsed[0.25m], stu_l:121.590065 , opt_l:41.280106
+[2026-05-21 02:26:16] TSPTester.py(86) : episode  20/ 20, Elapsed[0.25m], Remain[0.00m], Score_teacher:41.2801,Score_studetnt: 121.5901,
+[2026-05-21 02:26:16] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:26:16] TSPTester.py(101) :  Teacher SCORE: 41.2801 
+[2026-05-21 02:26:16] TSPTester.py(102) :  Student SCORE: 121.5901 
+[2026-05-21 02:26:16] TSPTester.py(103) :  Gap: 194.5488%
+[2026-05-21 02:26:16] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:26:16] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:26:16] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:26:16] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:26:16] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:26:16] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:26:16] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:26:23] TSPTester.py(702) : greedy, name:TSP100, gap:66.206259 %,  Elapsed[0.07m], stu_l:11.823032 , opt_l:7.113470
+[2026-05-21 02:26:23] TSPTester.py(86) : episode 200/200, Elapsed[0.07m], Remain[0.00m], Score_teacher:7.1135,Score_studetnt: 11.8230,
+[2026-05-21 02:26:23] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:26:23] TSPTester.py(101) :  Teacher SCORE: 7.1135 
+[2026-05-21 02:26:23] TSPTester.py(102) :  Student SCORE: 11.8230 
+[2026-05-21 02:26:23] TSPTester.py(103) :  Gap: 66.2063%
+[2026-05-21 02:26:23] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:26:23] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:26:23] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:26:23] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:26:23] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:26:23] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:26:23] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:26:31] TSPTester.py(702) : greedy, name:TSP500, gap:93.057668 %,  Elapsed[0.08m], stu_l:27.596500 , opt_l:14.294434
+[2026-05-21 02:26:31] TSPTester.py(86) : episode 100/200, Elapsed[0.08m], Remain[0.08m], Score_teacher:14.2944,Score_studetnt: 27.5965,
+Get first complete solution!
+[2026-05-21 02:26:35] TSPTester.py(702) : greedy, name:TSP500, gap:138.876891 %,  Elapsed[0.16m], stu_l:34.711575 , opt_l:14.531157
+[2026-05-21 02:26:35] TSPTester.py(86) : episode 200/200, Elapsed[0.16m], Remain[0.00m], Score_teacher:14.5312,Score_studetnt: 34.7116,
+[2026-05-21 02:26:35] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:26:35] TSPTester.py(101) :  Teacher SCORE: 14.4128 
+[2026-05-21 02:26:35] TSPTester.py(102) :  Student SCORE: 31.1540 
+[2026-05-21 02:26:35] TSPTester.py(103) :  Gap: 116.1554%
+[2026-05-21 02:26:35] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:26:35] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:26:35] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:26:35] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:26:35] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:26:35] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:26:35] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:26:48] TSPTester.py(702) : greedy, name:TSP1000, gap:106.836414 %,  Elapsed[0.16m], stu_l:41.766846 , opt_l:20.193178
+[2026-05-21 02:26:48] TSPTester.py(86) : episode 200/200, Elapsed[0.16m], Remain[0.00m], Score_teacher:20.1932,Score_studetnt: 41.7668,
+[2026-05-21 02:26:48] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:26:48] TSPTester.py(101) :  Teacher SCORE: 20.1932 
+[2026-05-21 02:26:48] TSPTester.py(102) :  Student SCORE: 41.7668 
+[2026-05-21 02:26:48] TSPTester.py(103) :  Gap: 106.8364%
+[2026-05-21 02:26:48] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:26:48] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:26:48] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:26:48] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:26:48] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:26:48] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:26:48] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:27:02] TSPTester.py(702) : greedy, name:TSP5000, gap:167.317426 %,  Elapsed[0.16m], stu_l:120.409180 , opt_l:45.043522
+[2026-05-21 02:27:02] TSPTester.py(86) : episode  20/ 20, Elapsed[0.16m], Remain[0.00m], Score_teacher:45.0435,Score_studetnt: 120.4092,
+[2026-05-21 02:27:02] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:27:02] TSPTester.py(101) :  Teacher SCORE: 45.0435 
+[2026-05-21 02:27:02] TSPTester.py(102) :  Student SCORE: 120.4092 
+[2026-05-21 02:27:02] TSPTester.py(103) :  Gap: 167.3174%
+[2026-05-21 02:27:02] test.py(168) : DEBUG_MODE: False
+[2026-05-21 02:27:02] test.py(169) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-21 02:27:02] test.py(171) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-21 02:27:02] test.py(171) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-21 02:27:02] test.py(171) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'knn_k': 99, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/pre_trained_model', 'epoch': 49}}
+[2026-05-21 02:27:02] test.py(171) : logger_params{'log_file': {'desc': 'test_knn-BeamSearch_BeamSearch-RC', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/ablation-study-GELD/result/20260521_092320_test_knn-BeamSearch_BeamSearch-RC'}}
+[2026-05-21 02:27:02] test.py(171) : ablation_params{'stage_1': 'knn-BeamSearch', 'stage_2': 'BeamSearch-RC'}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-21 02:27:19] TSPTester.py(702) : greedy, name:TSP10000, gap:224.202347 %,  Elapsed[0.25m], stu_l:206.605423 , opt_l:63.727306
+[2026-05-21 02:27:19] TSPTester.py(86) : episode  20/ 20, Elapsed[0.25m], Remain[0.00m], Score_teacher:63.7273,Score_studetnt: 206.6054,
+[2026-05-21 02:27:19] TSPTester.py(100) :  *** Test Done *** 
+[2026-05-21 02:27:19] TSPTester.py(101) :  Teacher SCORE: 63.7273 
+[2026-05-21 02:27:19] TSPTester.py(102) :  Student SCORE: 206.6054 
+[2026-05-21 02:27:19] TSPTester.py(103) :  Gap: 224.2023%

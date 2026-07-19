@@ -1,0 +1,294 @@
+[2026-05-17 18:43:45] test.py(108) : DEBUG_MODE: False
+[2026-05-17 18:43:45] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 18:43:45] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 18:43:45] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 18:43:45] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True}
+[2026-05-17 18:43:45] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+/home/schafhdaniel@edu.local/GELD/.venv/lib/python3.9/site-packages/torch/__init__.py:696: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:451.)
+  _C._set_default_tensor_type(t)
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 18:44:20] TSPTester.py(237) : greedy, name:TSP100, gap:0.067720 %,  Elapsed[0.55m], stu_l:7.874669 , opt_l:7.869339
+[2026-05-17 18:44:20] TSPTester.py(80) : episode 200/200, Elapsed[0.55m], Remain[0.00m], Score_teacher:7.8693,Score_studetnt: 7.8747,
+[2026-05-17 18:44:20] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 18:44:20] TSPTester.py(88) :  Teacher SCORE: 7.8693 
+[2026-05-17 18:44:20] TSPTester.py(89) :  Student SCORE: 7.8747 
+[2026-05-17 18:44:20] TSPTester.py(90) :  Gap: 0.0677%
+[2026-05-17 18:44:20] test.py(108) : DEBUG_MODE: False
+[2026-05-17 18:44:20] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 18:44:20] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 18:44:20] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 18:44:20] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 18:44:20] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 18:45:45] TSPTester.py(237) : greedy, name:TSP500, gap:0.460904 %,  Elapsed[1.39m], stu_l:16.601559 , opt_l:16.525393
+[2026-05-17 18:45:45] TSPTester.py(80) : episode 100/200, Elapsed[1.39m], Remain[1.39m], Score_teacher:16.5254,Score_studetnt: 16.6016,
+Get first complete solution!
+[2026-05-17 18:46:58] TSPTester.py(237) : greedy, name:TSP500, gap:0.582257 %,  Elapsed[2.61m], stu_l:16.691416 , opt_l:16.594791
+[2026-05-17 18:46:58] TSPTester.py(80) : episode 200/200, Elapsed[2.61m], Remain[0.00m], Score_teacher:16.5948,Score_studetnt: 16.6914,
+[2026-05-17 18:46:58] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 18:46:58] TSPTester.py(88) :  Teacher SCORE: 16.5601 
+[2026-05-17 18:46:58] TSPTester.py(89) :  Student SCORE: 16.6465 
+[2026-05-17 18:46:58] TSPTester.py(90) :  Gap: 0.5217%
+[2026-05-17 18:46:58] test.py(108) : DEBUG_MODE: False
+[2026-05-17 18:46:58] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 18:46:58] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 18:46:58] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 18:46:58] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 18:46:58] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 18:51:25] TSPTester.py(237) : greedy, name:TSP1000, gap:0.674478 %,  Elapsed[4.41m], stu_l:23.378115 , opt_l:23.221491
+[2026-05-17 18:51:25] TSPTester.py(80) : episode 200/200, Elapsed[4.41m], Remain[0.00m], Score_teacher:23.2215,Score_studetnt: 23.3781,
+[2026-05-17 18:51:25] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 18:51:25] TSPTester.py(88) :  Teacher SCORE: 23.2215 
+[2026-05-17 18:51:25] TSPTester.py(89) :  Student SCORE: 23.3781 
+[2026-05-17 18:51:25] TSPTester.py(90) :  Gap: 0.6745%
+[2026-05-17 18:51:25] test.py(108) : DEBUG_MODE: False
+[2026-05-17 18:51:25] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 18:51:25] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 18:51:25] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 18:51:25] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 18:51:25] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 18:54:42] TSPTester.py(237) : greedy, name:TSP5000, gap:3.065833 %,  Elapsed[3.25m], stu_l:52.546032 , opt_l:50.982979
+[2026-05-17 18:54:42] TSPTester.py(80) : episode  20/ 20, Elapsed[3.25m], Remain[0.00m], Score_teacher:50.9830,Score_studetnt: 52.5460,
+[2026-05-17 18:54:42] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 18:54:42] TSPTester.py(88) :  Teacher SCORE: 50.9830 
+[2026-05-17 18:54:42] TSPTester.py(89) :  Student SCORE: 52.5460 
+[2026-05-17 18:54:42] TSPTester.py(90) :  Gap: 3.0658%
+[2026-05-17 18:54:42] test.py(108) : DEBUG_MODE: False
+[2026-05-17 18:54:42] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 18:54:42] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 18:54:42] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 18:54:42] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 18:54:42] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:00:31] TSPTester.py(237) : greedy, name:TSP10000, gap:2.405999 %,  Elapsed[5.78m], stu_l:74.903427 , opt_l:73.143593
+[2026-05-17 19:00:31] TSPTester.py(80) : episode  20/ 20, Elapsed[5.78m], Remain[0.00m], Score_teacher:73.1436,Score_studetnt: 74.9034,
+[2026-05-17 19:00:31] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:00:31] TSPTester.py(88) :  Teacher SCORE: 73.1436 
+[2026-05-17 19:00:31] TSPTester.py(89) :  Student SCORE: 74.9034 
+[2026-05-17 19:00:31] TSPTester.py(90) :  Gap: 2.4060%
+[2026-05-17 19:00:31] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:00:31] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:00:31] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:00:31] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:00:31] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:00:31] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:01:07] TSPTester.py(237) : greedy, name:TSP100, gap:0.575663 %,  Elapsed[0.57m], stu_l:5.418619 , opt_l:5.387605
+[2026-05-17 19:01:07] TSPTester.py(80) : episode 200/200, Elapsed[0.57m], Remain[0.00m], Score_teacher:5.3876,Score_studetnt: 5.4186,
+[2026-05-17 19:01:07] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:01:07] TSPTester.py(88) :  Teacher SCORE: 5.3876 
+[2026-05-17 19:01:07] TSPTester.py(89) :  Student SCORE: 5.4186 
+[2026-05-17 19:01:07] TSPTester.py(90) :  Gap: 0.5757%
+[2026-05-17 19:01:07] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:01:07] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:01:07] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:01:07] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:01:07] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:01:07] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:02:33] TSPTester.py(237) : greedy, name:TSP500, gap:1.269025 %,  Elapsed[1.40m], stu_l:10.356665 , opt_l:10.226883
+[2026-05-17 19:02:33] TSPTester.py(80) : episode 100/200, Elapsed[1.40m], Remain[1.40m], Score_teacher:10.2269,Score_studetnt: 10.3567,
+Get first complete solution!
+[2026-05-17 19:03:46] TSPTester.py(237) : greedy, name:TSP500, gap:1.633591 %,  Elapsed[2.61m], stu_l:10.633486 , opt_l:10.462570
+[2026-05-17 19:03:46] TSPTester.py(80) : episode 200/200, Elapsed[2.61m], Remain[0.00m], Score_teacher:10.4626,Score_studetnt: 10.6335,
+[2026-05-17 19:03:46] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:03:46] TSPTester.py(88) :  Teacher SCORE: 10.3447 
+[2026-05-17 19:03:46] TSPTester.py(89) :  Student SCORE: 10.4951 
+[2026-05-17 19:03:46] TSPTester.py(90) :  Gap: 1.4534%
+[2026-05-17 19:03:46] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:03:46] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:03:46] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:03:46] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:03:46] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:03:46] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:08:12] TSPTester.py(237) : greedy, name:TSP1000, gap:2.282602 %,  Elapsed[4.40m], stu_l:14.420013 , opt_l:14.098207
+[2026-05-17 19:08:12] TSPTester.py(80) : episode 200/200, Elapsed[4.40m], Remain[0.00m], Score_teacher:14.0982,Score_studetnt: 14.4200,
+[2026-05-17 19:08:12] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:08:12] TSPTester.py(88) :  Teacher SCORE: 14.0982 
+[2026-05-17 19:08:12] TSPTester.py(89) :  Student SCORE: 14.4200 
+[2026-05-17 19:08:12] TSPTester.py(90) :  Gap: 2.2826%
+[2026-05-17 19:08:12] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:08:12] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:08:12] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:08:12] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:08:12] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:08:12] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:11:29] TSPTester.py(237) : greedy, name:TSP5000, gap:5.037587 %,  Elapsed[3.23m], stu_l:30.288483 , opt_l:28.835852
+[2026-05-17 19:11:29] TSPTester.py(80) : episode  20/ 20, Elapsed[3.23m], Remain[0.00m], Score_teacher:28.8359,Score_studetnt: 30.2885,
+[2026-05-17 19:11:29] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:11:29] TSPTester.py(88) :  Teacher SCORE: 28.8359 
+[2026-05-17 19:11:29] TSPTester.py(89) :  Student SCORE: 30.2885 
+[2026-05-17 19:11:29] TSPTester.py(90) :  Gap: 5.0376%
+[2026-05-17 19:11:29] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:11:29] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:11:29] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:11:29] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:11:29] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:11:29] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:17:19] TSPTester.py(237) : greedy, name:TSP10000, gap:4.630371 %,  Elapsed[5.78m], stu_l:42.127155 , opt_l:40.262836
+[2026-05-17 19:17:19] TSPTester.py(80) : episode  20/ 20, Elapsed[5.78m], Remain[0.00m], Score_teacher:40.2628,Score_studetnt: 42.1272,
+[2026-05-17 19:17:19] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:17:19] TSPTester.py(88) :  Teacher SCORE: 40.2628 
+[2026-05-17 19:17:19] TSPTester.py(89) :  Student SCORE: 42.1272 
+[2026-05-17 19:17:19] TSPTester.py(90) :  Gap: 4.6304%
+[2026-05-17 19:17:19] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:17:19] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:17:19] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:17:19] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:17:19] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:17:19] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:17:54] TSPTester.py(237) : greedy, name:TSP100, gap:0.159295 %,  Elapsed[0.55m], stu_l:6.550149 , opt_l:6.539732
+[2026-05-17 19:17:54] TSPTester.py(80) : episode 200/200, Elapsed[0.55m], Remain[0.00m], Score_teacher:6.5397,Score_studetnt: 6.5501,
+[2026-05-17 19:17:54] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:17:54] TSPTester.py(88) :  Teacher SCORE: 6.5397 
+[2026-05-17 19:17:54] TSPTester.py(89) :  Student SCORE: 6.5501 
+[2026-05-17 19:17:54] TSPTester.py(90) :  Gap: 0.1593%
+[2026-05-17 19:17:54] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:17:54] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:17:54] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:17:54] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:17:54] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:17:54] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:19:20] TSPTester.py(237) : greedy, name:TSP500, gap:0.941369 %,  Elapsed[1.39m], stu_l:12.098276 , opt_l:11.985449
+[2026-05-17 19:19:20] TSPTester.py(80) : episode 100/200, Elapsed[1.39m], Remain[1.39m], Score_teacher:11.9854,Score_studetnt: 12.0983,
+Get first complete solution!
+[2026-05-17 19:20:33] TSPTester.py(237) : greedy, name:TSP500, gap:1.485104 %,  Elapsed[2.60m], stu_l:12.213574 , opt_l:12.034844
+[2026-05-17 19:20:33] TSPTester.py(80) : episode 200/200, Elapsed[2.60m], Remain[0.00m], Score_teacher:12.0348,Score_studetnt: 12.2136,
+[2026-05-17 19:20:33] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:20:33] TSPTester.py(88) :  Teacher SCORE: 12.0101 
+[2026-05-17 19:20:33] TSPTester.py(89) :  Student SCORE: 12.1559 
+[2026-05-17 19:20:33] TSPTester.py(90) :  Gap: 1.2138%
+[2026-05-17 19:20:33] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:20:33] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:20:33] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:20:33] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:20:33] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:20:33] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:25:00] TSPTester.py(237) : greedy, name:TSP1000, gap:1.774291 %,  Elapsed[4.40m], stu_l:16.339102 , opt_l:16.054253
+[2026-05-17 19:25:00] TSPTester.py(80) : episode 200/200, Elapsed[4.40m], Remain[0.00m], Score_teacher:16.0543,Score_studetnt: 16.3391,
+[2026-05-17 19:25:00] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:25:00] TSPTester.py(88) :  Teacher SCORE: 16.0543 
+[2026-05-17 19:25:00] TSPTester.py(89) :  Student SCORE: 16.3391 
+[2026-05-17 19:25:00] TSPTester.py(90) :  Gap: 1.7743%
+[2026-05-17 19:25:00] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:25:00] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:25:00] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:25:00] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:25:00] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:25:00] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:28:18] TSPTester.py(237) : greedy, name:TSP5000, gap:5.271618 %,  Elapsed[3.24m], stu_l:33.664989 , opt_l:31.979170
+[2026-05-17 19:28:18] TSPTester.py(80) : episode  20/ 20, Elapsed[3.24m], Remain[0.00m], Score_teacher:31.9792,Score_studetnt: 33.6650,
+[2026-05-17 19:28:18] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:28:18] TSPTester.py(88) :  Teacher SCORE: 31.9792 
+[2026-05-17 19:28:18] TSPTester.py(89) :  Student SCORE: 33.6650 
+[2026-05-17 19:28:18] TSPTester.py(90) :  Gap: 5.2716%
+[2026-05-17 19:28:18] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:28:18] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:28:18] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:28:18] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:28:18] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:28:18] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:34:08] TSPTester.py(237) : greedy, name:TSP10000, gap:5.242719 %,  Elapsed[5.79m], stu_l:43.444305 , opt_l:41.280106
+[2026-05-17 19:34:08] TSPTester.py(80) : episode  20/ 20, Elapsed[5.79m], Remain[0.00m], Score_teacher:41.2801,Score_studetnt: 43.4443,
+[2026-05-17 19:34:08] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:34:08] TSPTester.py(88) :  Teacher SCORE: 41.2801 
+[2026-05-17 19:34:08] TSPTester.py(89) :  Student SCORE: 43.4443 
+[2026-05-17 19:34:08] TSPTester.py(90) :  Gap: 5.2427%
+[2026-05-17 19:34:08] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:34:08] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:34:08] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:34:08] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:34:08] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:34:08] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:34:45] TSPTester.py(237) : greedy, name:TSP100, gap:0.257769 %,  Elapsed[0.55m], stu_l:7.131806 , opt_l:7.113470
+[2026-05-17 19:34:45] TSPTester.py(80) : episode 200/200, Elapsed[0.55m], Remain[0.00m], Score_teacher:7.1135,Score_studetnt: 7.1318,
+[2026-05-17 19:34:45] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:34:45] TSPTester.py(88) :  Teacher SCORE: 7.1135 
+[2026-05-17 19:34:45] TSPTester.py(89) :  Student SCORE: 7.1318 
+[2026-05-17 19:34:45] TSPTester.py(90) :  Gap: 0.2578%
+[2026-05-17 19:34:45] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:34:45] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:34:45] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:34:45] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:34:45] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 100, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:34:45] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:36:11] TSPTester.py(237) : greedy, name:TSP500, gap:1.347306 %,  Elapsed[1.40m], stu_l:14.487023 , opt_l:14.294434
+[2026-05-17 19:36:11] TSPTester.py(80) : episode 100/200, Elapsed[1.40m], Remain[1.40m], Score_teacher:14.2944,Score_studetnt: 14.4870,
+Get first complete solution!
+[2026-05-17 19:37:24] TSPTester.py(237) : greedy, name:TSP500, gap:2.003423 %,  Elapsed[2.61m], stu_l:14.822277 , opt_l:14.531157
+[2026-05-17 19:37:24] TSPTester.py(80) : episode 200/200, Elapsed[2.61m], Remain[0.00m], Score_teacher:14.5312,Score_studetnt: 14.8223,
+[2026-05-17 19:37:24] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:37:24] TSPTester.py(88) :  Teacher SCORE: 14.4128 
+[2026-05-17 19:37:24] TSPTester.py(89) :  Student SCORE: 14.6547 
+[2026-05-17 19:37:24] TSPTester.py(90) :  Gap: 1.6781%
+[2026-05-17 19:37:24] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:37:24] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:37:24] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:37:24] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:37:24] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 200, 'test_batch_size': 200, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:37:24] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:41:52] TSPTester.py(237) : greedy, name:TSP1000, gap:1.797745 %,  Elapsed[4.41m], stu_l:20.556200 , opt_l:20.193178
+[2026-05-17 19:41:52] TSPTester.py(80) : episode 200/200, Elapsed[4.41m], Remain[0.00m], Score_teacher:20.1932,Score_studetnt: 20.5562,
+[2026-05-17 19:41:52] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:41:52] TSPTester.py(88) :  Teacher SCORE: 20.1932 
+[2026-05-17 19:41:52] TSPTester.py(89) :  Student SCORE: 20.5562 
+[2026-05-17 19:41:52] TSPTester.py(90) :  Gap: 1.7977%
+[2026-05-17 19:41:52] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:41:52] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:41:52] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:41:52] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:41:52] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:41:52] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:45:11] TSPTester.py(237) : greedy, name:TSP5000, gap:3.537169 %,  Elapsed[3.25m], stu_l:46.636787 , opt_l:45.043522
+[2026-05-17 19:45:11] TSPTester.py(80) : episode  20/ 20, Elapsed[3.25m], Remain[0.00m], Score_teacher:45.0435,Score_studetnt: 46.6368,
+[2026-05-17 19:45:11] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:45:11] TSPTester.py(88) :  Teacher SCORE: 45.0435 
+[2026-05-17 19:45:11] TSPTester.py(89) :  Student SCORE: 46.6368 
+[2026-05-17 19:45:11] TSPTester.py(90) :  Gap: 3.5372%
+[2026-05-17 19:45:11] test.py(108) : DEBUG_MODE: False
+[2026-05-17 19:45:11] test.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2026-05-17 19:45:11] test.py(110) : env_params{'mode': 'test', 'data_path': None, 'sub_path': False}
+[2026-05-17 19:45:11] test.py(110) : model_params{'mode': 'test', 'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'decoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'ff_hidden_dim': 128}
+[2026-05-17 19:45:11] test.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'test_episodes': 20, 'test_batch_size': 20, 'beam_size': 16, 'num_PRC': 1000, 'beam': True, 'PRC': True, 'model_load': {'path': 'result/20260517_191112_train', 'epoch': 50}}
+[2026-05-17 19:45:11] test.py(110) : logger_params{'log_file': {'desc': 'test__synthetic_tsp', 'filename': 'log.txt', 'filepath': '/home/schafhdaniel@edu.local/GELD/result/20260518_014345_test__synthetic_tsp'}}
+load raw dataset begin!
+Get first complete solution!
+[2026-05-17 19:51:03] TSPTester.py(237) : greedy, name:TSP10000, gap:3.125436 %,  Elapsed[5.80m], stu_l:65.719063 , opt_l:63.727306
+[2026-05-17 19:51:03] TSPTester.py(80) : episode  20/ 20, Elapsed[5.80m], Remain[0.00m], Score_teacher:63.7273,Score_studetnt: 65.7191,
+[2026-05-17 19:51:03] TSPTester.py(87) :  *** Test Done *** 
+[2026-05-17 19:51:03] TSPTester.py(88) :  Teacher SCORE: 63.7273 
+[2026-05-17 19:51:03] TSPTester.py(89) :  Student SCORE: 65.7191 
+[2026-05-17 19:51:03] TSPTester.py(90) :  Gap: 3.1254%

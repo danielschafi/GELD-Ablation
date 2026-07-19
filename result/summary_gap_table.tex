@@ -1,0 +1,16 @@
+% Optimality gap (\%) (mean over uniform/clustered/explosion/implosion)
+\begin{tabular}{llrrrrr}
+\hline
+Stage 1 & Stage 2 & $N=100$ & $N=500$ & $N=1000$ & $N=5000$ & $N=10000$ \\
+\hline
+Neural & None & 0.67 & 2.64 & 3.45 & 7.53 & 8.70 \\
+Neural & Neural-RC & 0.23 & 1.20 & 1.49 & 3.69 & 3.39 \\
+Neural & BeamSearch-RC & 65.56 & 110.95 & 91.00 & 117.47 & 127.92 \\
+BeamSearch & None & 32.29 & 36.08 & 35.67 & 34.71 & 30.32 \\
+BeamSearch & Neural-RC & 4.05 & 8.02 & 12.65 & 18.58 & 17.48 \\
+BeamSearch & BeamSearch-RC & 65.13 & 115.58 & 102.14 & 137.56 & 152.45 \\
+knn-BeamSearch & None & 32.29 & 70.80 & 93.75 & 191.59 & 228.71 \\
+knn-BeamSearch & Neural-RC & 4.05 & 8.60 & 14.75 & 28.73 & 42.43 \\
+knn-BeamSearch & BeamSearch-RC & 65.13 & 116.33 & 105.67 & 155.28 & 205.25 \\
+\hline
+\end{tabular}

@@ -1,0 +1,16 @@
+% Solving time (min) (mean over uniform/clustered/explosion/implosion)
+\begin{tabular}{llrrrrr}
+\hline
+Stage 1 & Stage 2 & $N=100$ & $N=500$ & $N=1000$ & $N=5000$ & $N=10000$ \\
+\hline
+Neural & None & 0.07 & 0.59 & 1.15 & 1.01 & 2.06 \\
+Neural & Neural-RC & 0.57 & 2.64 & 4.42 & 3.29 & 5.85 \\
+Neural & BeamSearch-RC & 0.13 & 0.73 & 1.30 & 1.13 & 2.24 \\
+BeamSearch & None & 0.01 & 0.01 & 0.01 & 0.03 & 0.07 \\
+BeamSearch & Neural-RC & 0.48 & 2.02 & 3.27 & 2.25 & 3.79 \\
+BeamSearch & BeamSearch-RC & 0.07 & 0.15 & 0.16 & 0.15 & 0.24 \\
+knn-BeamSearch & None & 0.01 & 0.01 & 0.01 & 0.03 & 0.07 \\
+knn-BeamSearch & Neural-RC & 0.50 & 2.05 & 3.28 & 2.28 & 3.81 \\
+knn-BeamSearch & BeamSearch-RC & 0.07 & 0.16 & 0.16 & 0.16 & 0.25 \\
+\hline
+\end{tabular}
