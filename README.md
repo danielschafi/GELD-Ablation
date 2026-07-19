@@ -247,6 +247,9 @@ Pre-computed tables and plots are already in `result/` from a prior run; re-run 
 
 Implementation is based on [LEHD](https://github.com/CIAM-Group/NCO_code/tree/main/single_objective/LEHD). Synthetic benchmarks follow [INViT](https://github.com/Kasumigaoka-Utaha/INViT).
 
+This ablation repository is a copy of the GELD tsp solvers repo with a few things added for ablation. If you use GELD cite them.
+This repo is mostly not my code. 
+
 ### Citation
 
 ```bibtex
